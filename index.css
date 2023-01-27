@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+}
+
+.todo_container {
+  padding: 15px;
+  width: 60%;
+  min-width: 400px;
+  /* height: 90vh; */
+  margin: 20px auto;
+  background: linear-gradient(to right, red, yellow);
+}
+
+h1 {
+  text-align: center;
+  color: white
+}
+
+.todo_container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-width: 300px;
+  margin: 20px auto;
+}
+
+form input,
+button {
+  padding: 8px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  outline: none;
+  font-size: 18px;
+  height: 42px;
+}
+
+form button {
+  background-color: royalblue;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: 0.4s linear;
+}
+
+button:hover {
+  background-color: rgb(85, 82, 67);
+}
+
+.todo_list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-width: 300px;
+  margin: 20px auto;
+  background-color: #ccc;
+  /* padding:10px; */
+  /* display: none; */
+}
+
+.todo_list .todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  min-width: 250px;
+  margin: 5px 0;
+  background-color: royalblue;
+  padding: 10px;
+}
+
+.todo p {
+  color: white;
+  font-size: 18px;
+}
+
+.todo .fa-trash-can {
+  cursor: pointer;
+  color: white;
+}
